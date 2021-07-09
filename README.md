@@ -1,3 +1,4 @@
 # CSES
 
-[Weird Algorithm](1083.cpp)
+[Weird Algorithm](1068.cpp)
+[Missing  Number](1083.cpp)
