@@ -99,19 +99,19 @@ void testCase()
   long long x, y;
   cin >> x >> y;
   long long unsigned int res = 0;
-  if (x <= y)
+  if (x > y)
   {
-    if (isOdd(y))
-      res = pow(y, 2) - (x - 1);
+    if (x % 2 == 0)
+      res = (x * x - y + 1);
     else
-      res = pow(y - 1, 2) + y;
+      res = ((x - 1) * (x - 1) + y);
   }
   else
   {
-    if (isOdd(x))
-      res = pow(x - 1, 2) + y;
+    if (y % 2 == 0)
+      res = ((y - 1) * (y - 1) + x);
     else
-      res = pow(x, 2) - (y - 1);
+      res = (y * y - x + 1);
   }
   cout << res << '\n';
   // cout << " Build Successfull\n";
